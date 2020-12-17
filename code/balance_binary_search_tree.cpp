@@ -1,5 +1,5 @@
 #include <iostream>
-#include <unordered_set>
+#include <set>
 #include "record_time.h"
 
 using namespace std;
@@ -18,11 +18,11 @@ int main(){
 
     srand( time( NULL ) );
 
-    recordTime bbst("bbst.csv");
+    recordTime bbst("output/bbst.csv");
 
     for(int k=10; k<=30; k++){
         int p = _2kPow(k);
-        unordered_set<int> data;
+        multiset<int> data;
 
         bbst.start(); cout << "start record " << k << " insertion time..." << endl;
         for(int i=0; i<p; i++){

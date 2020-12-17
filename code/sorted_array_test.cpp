@@ -18,7 +18,7 @@ int main(){
 
     srand( time( NULL ) );
 
-    recordTime sorted_array("Sorted_Array.csv");
+    recordTime sorted_array("output/Sorted_Array.csv");
 
     for(int k=10; k<=30; k++){
         int p = _2kPow(k);
